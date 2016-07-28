@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Catalogo de peliculas</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="text-center title">Cine</h1>
+		</header>
+		<section id="all">
+			<form action="#" class="form">
+				<select class="form-control" id="seleccion">
+					<option value="opciones">Seleccione una opcion...</option>
+				</select>
+			</form>
+			<!--<div class="menu">
+				<select class="dropdow-menu" id="menu" name="select">
+					<option value="opciones">Seleccione una opcion...</option>
+					<option value="accion">Accion</option>
+					<option value="ciencia-ficcion">Ciencia-Ficción</option> 
+					<option value="suspenso">Suspenso</option>
+					<option value="terror">Terror</option> 
+					<option value="comedia">Comedia</option> 
+					<option value="romantica">Romantica</option>
+					<option value="familiar">Familiar</option> 
+					<option value="infantil">Infantil</option> 
+				</select>
+			</div> -->
+			<div id="accion" class="col-md-12 text-center">
+				<h3 class="moviesections">Acción</h3>
+				<img src="img/accion1.jpg" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/accion2.jpg" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/accion3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/accion4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/accion5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+			<div id="ciencia-ficcion" class="col-md-12 text-center">
+				<h3 class="moviesections">Ciencia Ficción</h3>
+				<img src="img/scifi1.jpg" alt="" class="flyer btn" data-toggle="modal" data-target="#myModal">
+				<img src="img/scifi2.png" alt="" class="flyer btn" data-toggle="modal" data-target="#myModal">
+				<img src="img/scifi3.jpg" alt="" class="flyer btn" data-toggle="modal" data-target="#myModal">
+				<img src="img/scifi4.jpg" alt="" class="flyer btn" data-toggle="modal" data-target="#myModal">
+				<img src="img/scifi5.jpg" alt="" class="flyer btn" data-toggle="modal" data-target="#myModal">
+			</div>
+			<div id="suspenso" class="col-md-12 text-center">
+				<h3 class="moviesections">Suspenso</h3>
+				<img src="img/suspenso1.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/suspenso2.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/suspenso3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/suspenso4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/suspenso5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+			<div id="terror" class="col-md-12 text-center">
+				<h3 class="moviesections">Terror</h3>
+				<!--<h3 class="moviesections" onclick="$(location).attr('href','PELICULAS.html');">Terror</h3>-->
+				<img src="img/terror1.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/terror2.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/terror3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/terror4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/terror5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+			<div id="comedia" class="col-md-12 text-center">
+				<h3 class="moviesections">Comedia</h3>
+				<img src="img/comedia1.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/comedia2.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/comedia3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/comedia4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/comedia5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+			<div id="romantica" class="col-md-12 text-center">
+				<h3 class="moviesections">Romantica</h3>
+				<img src="img/romantica1.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/romantica2.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/romantica3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/romantica4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/romantica5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+			<div id="familiar" class="col-md-12 text-center">
+				<h3 class="moviesections">Familiar</h3>
+				<img src="img/familiar1.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/familiar2.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/familiar3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/familiar4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/familiar5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">				
+			</div>
+			<div id="infantil" class="col-md-12 text-center">
+				<h3 class="moviesections">Infantil</h3>
+				<img src="img/infantil1.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/infantil2.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/infantil3.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/infantil4.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+				<img src="img/infantil5.jpg" alt="" class="btn flyer" alt="" data-toggle="modal" data-target="#myModal">
+			</div>
+		</section>
+		<footer>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">BlahBlahBlah</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<div class="col-md-5 img">
+			      		
+			      	</div>
+			        <p class="text col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque, minima. Numquam dicta adipisci libero ea totam, fugit debitis ipsum tempore, voluptatibus eum cum neque. Ducimus illo molestias, nobis cum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus explicabo, dolorem veniam ab praesentium aliquid vero expedita quod, eveniet obcaecati saepe quae sit dolorum ducimus repellendus tenetur maxime ratione doloremque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit laborum atque culpa, quaerat, est quos quis ratione mollitia, illo, aspernatur exercitationem doloremque deleniti laudantium reiciendis distinctio similique incidunt quisquam. </p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</footer>
+		
+		<!--<script src="https://code.jquery.com/jquery-2.2.2.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
