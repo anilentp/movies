@@ -10,6 +10,7 @@
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	display: inline-block;
 }
 #seleccion{
 	background-color: #E2A631;
@@ -32,7 +33,16 @@
 .title{
 	padding: 3%;
 }
-.modal-body, .modal-footer {
+.modal-body {
  	border: solid 1px #242323;
  	text-align: justify;
+ 	display: inline-block;
+}
+.btn:hover{
+	background-color: #C97D24;
+	color: whitesmoke;
+}
+option:hover{
+	background-color: #C97D24;
+	color: whitesmoke;
 }
