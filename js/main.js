@@ -1,14 +1,26 @@
-
-var categorias = ["Accion", "Ciencia-Ficción", "Suspenso", "Terror", "Comedia", "Romantica", "Familiar", "Infantil" ]
+ 
+//var categorias = ["Accion", "Ciencia-Ficción", "Suspenso", "Terror", "Comedia", "Romantica", "Familiar", "Infantil" ]
 $(document).ready(function(){
 	
 	$(".flyer").click(function(){
-		$(this).appendTo(".img");
+		var imgurl = $(this).attr("src");
+		$(".img").html('<img class="col-md-5 img" src="' +  imgurl  + ' " />');
 	});
 
-	categorias.forEach(function (element, index, array) {
-	 	$("select").append("<option>"+ array[index] + "</option>");
-	 });
+	//categorias.forEach(function (element, index, array) {
+	// 	$("select").append("<option>"+ array[index] + "</option>");
+	// });
+
+	$("#seleccion").change(function () {
+		var movieSelected = $(this).val();
+		if (movieSelected !== "all") {
+			$(".movies-categories").hide();
+			$("#" + movieSelected).show();
+		}
+		else{
+			$(".movies-categories").show();
+		}
+	});
 });
 
 /*
@@ -19,6 +31,7 @@ $(document).ready(function(){
 });
 	
 */
+
 /*
 	$("#menu").change(function () {
 		var valor = $("#menu").val();
@@ -26,8 +39,7 @@ $(document).ready(function(){
 		$(".col-md-12").not()
 	}) */
 //sirve para menu!
-	$("#accion").click(function () {
-
+	/*$("#accion").click(function () {
 		$("div").hide();
 	   	$("#accion").show();
 	});
@@ -62,8 +74,7 @@ $(document).ready(function(){
 });
 //sirve para menu!
 
-/*   /*$('#myModal').on('shown.bs.modal', function () {
+/*   $('#myModal').on('shown.bs.modal', function () {
 	  $('#myInput').focus()
 	});*/
-
 
